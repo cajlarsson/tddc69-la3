@@ -1,0 +1,59 @@
+TDDC69 Objektorienterad programmering i Java
+--------------------------------------------
+
+Laboration: Objektorienterad programmering i C++
+
+Här finns filskelett och testprogram för klasserna Expression och Expression_Tree.
+Det är tänkt att alla Expression_Tree-klasser deklareras på samma inkluderingsfil,
+Expression_Tree.h, och att separata definitioner likaså görs på en gemensam fil,
+Expression_Tree.cc.
+
+Kompileringsflaggor som rekommenderas (för avlusning även -g):
+
+   g++ -std=c++98 -pedantic -Wall -Wextra ...
+
+
+Expression
+----------
+
+Expression.h          Inkluderingsfil för Expression-klassen.
+
+Expression.cc         Implementeringsfil för Expression-klassen.
+
+		      OBSERVERA, DET FINNS STUBBAR FÖR ATT DET GIVNA PROGRAMMET
+                      SKA KOMPILERA. ERSÄTT/MOFIFIERA DESSA MED KORREKT KOD.
+
+expression_utils.h    Hjälpfunktioner för att omvandla infix till postfix
+expression_utils.cc   och bygga uttrycksträd från postfix. 
+
+expression-test-0.cc  Test av grundläggande operationer för Expression.
+
+expression-test.cc    Mer omfattande testprogram för Expression.
+
+Kompilering:
+
+   g++ expression-test-0.cc Expression.cc Expression_Tree.cc
+
+   g++ expression-test.cc Expression.cc Expression_Tree.cc expression_utils.cc
+
+
+Expression_Tree
+---------------
+
+Expression_Tree.h          Inkluderingsfil för Expression_Tree-klasserna.
+
+Expression_Tree.cc         Implementeringsfil för Expression_Tree-klasserna.
+
+		           OBSERVERA, DET FINNS EN STUBBE FÖR VARJE KONKRET 
+			   KLASS SOM SKA FINNAS FÖR ATT DET GIVNA PROGRAMMET 
+			   SKA KOMPILERA. ERSÄTT DESSA MED KORREKT KOD.
+
+expression-tree-test-0.cc  Grundläggande test Expression_Tree-klasserna.
+
+expression-tree-test.cc    Mer omfattande testprogram för Expression_Tree-klasserna.
+
+Kompilering:
+
+   g++ expression-tree-test-0.cc Expression_Tree.cc
+
+   g++ expression-tree-test.cc Expression_Tree.cc

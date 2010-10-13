@@ -1,1 +1,18 @@
-#Caj Larsson cajla304@student.liu.se
+TDDC69 Objektorienterad programmering i Java
+--------------------------------------------
+
+Laboration: Objektorienterad programmering i C++
+
+Här finns den givna koden för laborationen:
+
+Calculator           Huvudprogrammet.
+
+Expression           Filskelett för de klasser som ska konstrueras.
+		     Hjälpprogram.
+
+Filkatalogstrukturen som ges här ska bibehållas!
+
+Börja med att designa. implementera och testa klassen Expression
+och klasshierarkin Expression_Tree, se mappen Expression.
+
+Se även README i Calculator och Expression!

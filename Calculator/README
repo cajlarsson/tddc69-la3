@@ -1,0 +1,45 @@
+TDDC69 Objektorienterad programmering i Java
+--------------------------------------------
+
+Laboration: Objektorienterad programmering i C++
+
+kalkylator.cc  Huvudprogrammet.
+
+Calculator.h   Inkluderingsfil för klassen Calculator. Innehåller
+               klassdefinitionen för Calculator samt definition
+               av en undantagsklass assicierad med Calculator.
+
+               Klassen Expression, som ska designas i laborationen,
+               används för att deklarera medlemmen current_expression_,
+               det "aktuella uttrycket" i kalkylatorn. 
+
+Calculator.cc  Implementeringsfil för klassen Calculator. Separata
+               definitioner för medlemsfunktionerna.
+
+               I funktionen Calculator::read_expression() tilldelas 
+               current_expression_ med ett värde som erhålls genom  
+               anrop av hjälpfunktionen make_expression(). Dessförinnan
+	       har hjälpfunktionen infix_to_postfix() använts för att
+	       omvandla inmatat infixuttryck till postfix.
+
+               I funktionen Calculator::execute_command() anropas
+               för current_expression_ Expression::evaluate(), för
+               att erhålla uttryckets värde, och Expression::get_postfix()
+               för att erhålla motsvarande postfixform.
+
+Makefile       Makefil för att kompilera och länka programmet samt 
+               städa filkatalogen. Följande kommandon kan ges:
+
+               make         kompilerar och länkar programmet, det 
+                            körbara programmet erhålls på filen
+			    'kalkylator'
+
+               make clean   städar bort en del kompileringsprodukter
+
+               make zap     storstädar, endast källkod och Makefile 
+                            kvar
+
+Programmet går att kompilera och köra men utför egentligen inget. Detta
+är möjligt genom att det finns stubbar för de klasser och funktioner
+som programmet kräver, speciellt hjälpfunktionen make_expression() som
+deklareras i expression_utils.h.
